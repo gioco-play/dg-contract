@@ -91,4 +91,11 @@ interface DGServiceInterface {
      * @return mixed
      */
     function accountToOperator(string $op_code, array $vendor, string $vendor_account);
+
+    /**
+     * 工具: 原廠原始資料異常修正
+     * @param array $inputs
+     * @return mixed
+     */
+    function fixVendorRaw(array $inputs);
 }
